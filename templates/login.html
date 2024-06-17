@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Insulyser.Inc</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div id="left-part">
+    <h2>DRDS by thebalds</h2>
+    
+    <ul>
+        <li><a href="/about">About Diabetic Retinopathy</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+    </ul>
+</div>
+
+<div id="right-part">
+    <div id="login-content" class="container">
+        <h2>WELCOME</h2>
+        <p>This is Diabetic Retinopathy Detection System.</p>
+        <h2>Login</h2>
+        <form method="post" action="/login">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Login">
+        </form>
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
+    </div>
+</div>
+
+</body>
+</html>

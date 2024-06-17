@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload - Insulyser.Inc</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div id="left-part">
+    <h2>DRDS by thebalds</h2>
+    <ul>
+        <li><a href="/logout">Logout</a></li>
+        <li><a href="/about">About Diabetic Retinopathy</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+    </ul>
+</div>
+
+<div id="right-part">
+    <div class="container">
+        <h2>Retinal Scanned Image Uploader</h2>
+        <p>The Image uploaded must be clear and medically done and tested for further run through our algorithm</p>
+
+        <h2>Retinal Image Screener</h2>
+        <form method="post" enctype="multipart/form-data" action="/upload">
+            <label for="image">Upload the Retinal Scanned Image:</label>
+            <input type="file" id="image" name="image" accept="image/*">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
+
