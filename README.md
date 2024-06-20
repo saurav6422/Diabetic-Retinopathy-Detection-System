@@ -75,7 +75,7 @@ This project is licensed under the GNU General Public License v2.0. See the [LIC
 
 ## Team
 
-- Aditya - Machine Learning Engineer - [Git]()
+- Aditya - Machine Learning Engineer - [Git](https://github.com/Aditya-039)
 - Saurav - Machine Learning Engineer | Backend Developer - [Git](https://github.com/saurav6422)
 - Sambarta - Frontend Developer - [Git](https://github.com/Sambarta-2001)
 - Abir - Frontend Developer - [Git]()
