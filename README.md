@@ -12,7 +12,7 @@ The application allows users to upload scanned retinal images and provides predi
 - [File Structure](#file-structure)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
-- [Contact](#contact)
+- [Team](#team)
 
 ## Features
 
@@ -73,6 +73,10 @@ This project is licensed under the GNU General Public License v2.0. See the [LIC
 - [Keras](https://keras.io/)
 - [TenserFlow](https://www.tensorflow.org/)
 
-## Contact
+## Team
 
-For any questions or suggestions, please contact saurav.bakuli777@gmail.com | [Linkedin](https://www.linkedin.com/in/sauravbakuli/).
+- Aditya - Machine Learning Engineer - [Git]()
+- Saurav - Machine Learning Engineer | Backend Developer - [Git](https://github.com/saurav6422)
+- Sambarta - Frontend Developer - [Git](https://github.com/Sambarta-2001)
+- Abir - Frontend Developer - [Git]()
+
