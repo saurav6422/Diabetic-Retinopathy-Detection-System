@@ -25,9 +25,7 @@ The application allows users to upload scanned retinal images and provides predi
 ## Requirements
 
 - Python 3.7+
-- Flask
-- OpenCV
-- TensorFlow and Keras 
+- [requirements.txt](requirements.txt)
 
 ## Installation
 
