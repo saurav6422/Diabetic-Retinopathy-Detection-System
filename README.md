@@ -59,6 +59,9 @@ The application allows users to upload scanned retinal images and provides predi
 - `app.py`: The main script containing the Streamlit application.
 - `requirements.txt`: A file listing the required Python packages.
 - `model2_.h5` : Trained model.
+- `static` : Assets for the website.
+- `templates` : File for the website.
+- `dataset` : dataset upon which model is trained.
 
 ## License
 
