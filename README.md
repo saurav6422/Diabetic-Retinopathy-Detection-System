@@ -1,7 +1,9 @@
-# Diabetic Retinopathy Detection System
+# Diabetic Retinopathy Detection System Ver.1
 
 This repository contains a web application built using Flask and HTML/CSS for detecting different stages of diabetic retinopathy from retinal images. 
 The application allows users to upload scanned retinal images and provides predictions on the stage of diabetic retinopathy, including mild, moderate, no diabetic retinopathy, proliferative diabetic retinopathy, and severe diabetic retinopathy.
+
+[For version 2 click here](https://github.com/abir-011/Insulyser-DRDS/tree/master/drds_project)
 
 ## Table of Contents
 
