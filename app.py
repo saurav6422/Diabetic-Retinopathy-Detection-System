@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 import numpy as np
 import os
+from pathlib import Path
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import tensorflow as tf
 import cv2
@@ -8,12 +9,13 @@ import keras
 from keras.models import load_model
 from keras.preprocessing.image import ImageDataGenerator
 
+
 app = Flask(__name__, static_url_path='/static')
 
 isLoggedIn = False
 
 global model
-model = load_model('model_2.h5')
+model = load_model('./model_2.h5')
 
 class_labels = ['Mild', 'Moderate', 'No_DR','Proliferate_DR','Severe']
 
@@ -32,8 +34,8 @@ def preprocess_image(img):
     
     return img_blur
 
-data = "dataset/"
-train_dir = data + "train/"
+data_dir = Path("dataset")
+train_dir = data_dir / "train"
 clases = sorted(os.listdir(train_dir))
 x_train = np.array([preprocess_image(cv2.imread(os.path.join(train_dir, cl, name), cv2.IMREAD_COLOR)) for cl in clases
            for name in os.listdir(os.path.join(train_dir, cl))])
@@ -96,7 +98,7 @@ def home():
 def upload():
     if 'image' in request.files:
         image = request.files['image']
-        image.save('C:/Users/saura/Desktop/web/input/input.png') 
+        image.save('./input/input.png') 
         return redirect(url_for('wait'))
     else:
         return render_template('error.html')
@@ -105,7 +107,7 @@ def upload():
 def wait():
     print("wait")
     #render_template('wait.html')
-    image_path = 'C:/Users/saura/Desktop/web/input/input.png'
+    image_path = './input/input.png'
     print("Image path:", image_path)
     predicted_class= predict_class(image_path)
     print("Predicted class:", predicted_class)
